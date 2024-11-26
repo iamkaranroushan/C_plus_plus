@@ -1,0 +1,1 @@
+obj2.set_data("new value");

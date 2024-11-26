@@ -1,0 +1,2 @@
+// Overload the () operator for a Polynomial class.
+// Create a Polynomial class to represent a polynomial of degree 2 (e.g., ax² + bx + c). Overload the () operator so that you can evaluate the polynomial for a given x.

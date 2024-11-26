@@ -1,0 +1,1 @@
+I haven't fully understand this topic because I am going to learn data structure and algorithm, so I think that this time, file handling is off-track concept for me. I will learn this concept later.
