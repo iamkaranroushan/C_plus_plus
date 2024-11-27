@@ -1,18 +1,4 @@
-/*
-i = 1;
-j=i-1;
-loop:
 
-condition: 
-if [j] != 0;
-then:
-    if [i] == [j];
-    then:
-        [j] = [i];
-else;
-i++
-
-*/
 #include <iostream>
 #include <vector>
 
