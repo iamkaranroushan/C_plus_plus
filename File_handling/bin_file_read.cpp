@@ -12,20 +12,20 @@ int main() {
         size_t file_size = bin_file.tellg();
         bin_file.seekg(0, std::ios::beg);
 
-        // Read the entire file into a buffer
+        
         std::vector<char> buffer(file_size);
         bin_file.read(buffer.data(), file_size);
         bin_file.close();
 
-        // Display the raw binary data
+        
         std::cout << "Raw binary data:\n";
-        for (unsigned char byte : buffer) {  // Use unsigned char for proper hex output
+        for (unsigned char byte : buffer) {  
             std::cout << std::hex << static_cast<int>(byte) << " ";
         }
-        std::cout << std::dec << std::endl;  // Reset to decimal output
+        std::cout << std::dec << std::endl; 
     } else {
         std::cerr << "Error opening the file.\n";
     }
 
-    return 0;  // Correctly ends the main function
+    return 0; 
 }
