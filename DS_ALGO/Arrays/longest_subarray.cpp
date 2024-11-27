@@ -18,6 +18,7 @@ int max(int &c, int &d){
 }
 
 
+
 int longest_sub_array(int arr[], int n){
 
     int previous_difference = 0;
