@@ -1,10 +1,10 @@
+//corrected code using chatgpt.
+
 #include <iostream>
 #include <algorithm>
 #include <vector>
 #include <unordered_map>
 #include <string>
-
-
 
 int k_distinct_character_substring(std::string input_string, int k){
     
@@ -14,7 +14,7 @@ int k_distinct_character_substring(std::string input_string, int k){
     int unique_substring_size = 0;
     int current_max = 0;
 
-    for(int right = 0; right< input_string.size(); right++){
+    for(int right = 0; right< input_string.size(); right++){//corrected condition from input_string.size()-1 to input_string.size(). 
 
         distinct_map[input_string[right]]++;
 
@@ -43,7 +43,7 @@ int main(){
 }
 
 /*
-original code.
+original code written by me.
 
 #include <iostream>
 #include <algorithm>
