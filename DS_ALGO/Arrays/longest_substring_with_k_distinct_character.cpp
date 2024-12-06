@@ -24,7 +24,6 @@ int k_distinct_character_substring(std::string input_string, int k){
                     distinct_map.erase(input_string[left]);
                 }
                 left++;
-                current_max--;
             }
             
         current_max = right -left + 1; //correctly increasing current_max length of substring;
