@@ -4,7 +4,7 @@
 
 
 //rotate the array by k indices.
-//using two pointers.
+
 
 
 
