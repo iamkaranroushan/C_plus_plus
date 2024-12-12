@@ -10,13 +10,14 @@
 
 void rotate_array(std::vector<int>& nums, int& k){
     
-    if(nums.empty() || nums.size() == 1 || k<=0 )return;
+    if(nums.empty() || nums.size() == 1 || k<=0 ) return;
+    std::vector <int> result(nums.size());
+    for(int i = 0; i<nums.size(); i++){
+        int new_index = (i+k) % nums.size();
+        result[new_index] = nums[i];
+    }
+    nums = result;
     
-    k = k % nums.size();
-    std::reverse(nums.begin(), nums.end());
-    std::reverse(nums.begin(), nums.begin()+k);
-    std::reverse(nums.begin()+k, nums.end());
-
 }
 
 int main(){
