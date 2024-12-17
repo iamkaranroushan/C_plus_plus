@@ -34,7 +34,5 @@ int longestOnes(std::vector<int>& nums, int k) {
 int main(){
     std::vector <int> nums = {1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1};
     int k = 2;
-
     std::cout<<"longest ones inside the nums after flipping 0s are "<<longestOnes(nums, k);
-
 }
