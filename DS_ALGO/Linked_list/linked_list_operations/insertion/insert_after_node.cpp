@@ -9,8 +9,8 @@ struct Node{
 };
 
 class Linked_list{
+    std::unique_ptr<Node> head;
     public:
-        std::unique_ptr<Node> head;
 
         Linked_list():head(nullptr){};
 
