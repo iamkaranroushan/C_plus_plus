@@ -25,12 +25,18 @@ class Linked_list{
         }
   
         void delete_at_idx(const int& index){
-            if(!head){
-                std::cout<<"list is empty."<<std::endl;
+            if(index < 0 || !head){
+                std::cout<<"list is empty or invalid position"<<std::endl;
             }
-            int count = 0;
             Node* raw_ptr = head.get();
 
+            //deletion at start.
+            if(raw_ptr && index == 0){
+                head = std::move(raw_ptr->next);
+                return;
+            }
+            //index > 0 ;
+            int count = 0;
             while(raw_ptr && count != (index-1)){
                 raw_ptr = raw_ptr->next.get();
                 count++;
@@ -71,10 +77,13 @@ int main(){
 
     list.delete_at_idx(3);
     list.print();//5->10->20->40->nullptr
- 
-    list.delete_at_idx(1);
-    list.print();//5->20->40->nullptr
+
+    list.delete_at_idx(0);
+    list.print();//10->20->40->nullptr
 
     list.delete_at_idx(7);
-    list.print();//5->20->40->nullptr
+    list.print();// 7 is not a valid index. Deletion not occurred. 10->20->40->NULL
+    
+    list.delete_at_idx(2);
+    list.print();//10->20->NULL
 }
