@@ -41,15 +41,16 @@ class D_linked_list{
                 return;
             }
             std::cout<<"list backwards.\n";
+            Node* tail_ptr = t_ptr;
             std::cout<<"tail->";
-            while(t_ptr){
-                std::cout<<t_ptr->data;
-                t_ptr = t_ptr->previous;
-                if(t_ptr){
+            while(tail_ptr){
+                std::cout<<tail_ptr->data;
+                tail_ptr = tail_ptr->previous;
+                if(tail_ptr){
                     std::cout<<"<->";
                 }
             }
-            std::cout<<"<-head";
+            std::cout<<"<-head"<<std::endl;
         }
         void print_forward(){
             if(!head){
