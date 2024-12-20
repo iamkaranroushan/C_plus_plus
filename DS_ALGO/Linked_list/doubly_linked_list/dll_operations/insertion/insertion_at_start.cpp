@@ -52,18 +52,17 @@ class d_linked_list{
             std::cout<<"list is empty.";
             return;
         }
+        Node* tail_ptr = t_ptr;
         std::cout<<"backward traversal:"<<std::endl;
-
         std::cout<<"tail->";
-        while(t_ptr){
-            std::cout<<t_ptr->data;
-            t_ptr = t_ptr->previous;
-            if(t_ptr){
+        while(tail_ptr){
+            std::cout<<tail_ptr->data;
+            tail_ptr = tail_ptr->previous;
+            if(tail_ptr){
                 std::cout<<"<->";
             }
         }
-        std::cout<<"<-head"<<std::endl;
-        
+        std::cout<<"<-head"<<std::endl;  
     }
 
 };
