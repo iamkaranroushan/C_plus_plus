@@ -28,7 +28,7 @@ public:
         current->next = newnode;
         newnode->next = head;
         
-    }
+    } 
     void print(){
         if(!head){
             std::cout<<"[null]\n";
@@ -48,12 +48,12 @@ public:
 int main(){
     
     C_S_linked_list list;
-
+    
     list.insert_at_end(10);
     list.insert_at_end(12);
     list.insert_at_end(14);
     list.insert_at_end(20);
-
+    
     list.print();
     
     return 0;
